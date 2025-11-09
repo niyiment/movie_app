@@ -4,19 +4,19 @@ A beautiful, responsive Flutter application for discovering and exploring movies
 
 ## Features
 
-    - Popular movies: Browse the latest trending films
-    - Top rated: Discover the highest-rated movies
-    - Upcoming moviess: Stay updated with upcoming releases
-    - Advance search: Find any movie instantly
+- Popular movies: Browse the latest trending films
+- Top rated: Discover the highest-rated movies
+- Upcoming moviess: Stay updated with upcoming releases
+- Advance search: Find any movie instantly
 
 ## Tech stack
 
-    - Framework: Flutter
-    - State management: Riverpod 3
-    - Rest Client: Retrofit
-    - HTTP Client: Dio
-    - Data SErialization: JSON Serializable
-    - Image Caching: Cached Network Imagee
+- Framework: Flutter
+- State management: Riverpod 3
+- Rest Client: Retrofit
+- HTTP Client: Dio
+- Data SErialization: JSON Serializable
+- Image Caching: Cached Network Image
 
 ## Screenshots
 
@@ -36,35 +36,40 @@ A beautiful, responsive Flutter application for discovering and exploring movies
 
 ### Installation
 
-    1. Clone the repository
-    ```
+1. Clone the repository
+
+    ``` bash
     git clone https://github.com/niyiment/movie_app.git
     cd movies_app
     ```
 
-    2. Install dependencies
-    ```
+2. Install dependencies
+
+    ``` bash
     flutter pub get
     ```
-    3. Get your TMDb API
-     - Visit [TMDb API](https://www.themoviedb.org/settings/api)
-     - Create an account and generate an API key
-    4. Configure API key: Create a .env file and configure your API key.
-    5. Generate code:
-    ```
+
+3. Get your TMDb API
+    - Visit [TMDb API](https://www.themoviedb.org/settings/api)
+    - Create an account and generate an API key
+4. Configure API key: Create a .env file and configure your API key.
+5. Generate code:
+
+    ``` bash
     dart run build_Runner build --delete-conflicting-outputs
     ```
-    6. Run the app
-    ``` 
+
+6. Run the app
+
+    ``` bash
     flutter run
     ```
 
 ## Future enhancement
 
-    - Offline caching with Drift
-    - Whatchlist functionalit with local storage
-    - User reviews and ratings
-    - Advanced filtering and sorting
-    - Dark/Light mode
-    - Share moview details
-    
+- Offline caching with Drift
+- Whatchlist functionalit with local storage
+- User reviews and ratings
+- Advanced filtering and sorting
+- Dark/Light mode
+- Share moview details
