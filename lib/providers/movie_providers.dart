@@ -29,11 +29,50 @@ final movieRepositoryProvider = Provider<MovieRepository>((ref) {
   return MovieRepository(apiClient: apiClient, apiKey: Env.tdbmiApiKey);
 });
 
+class PopularMoviesPageNotifier extends Notifier<int> {
+    @override
+    int build() => 1;
+
+    void nextPage() => state++;
+    void previousPage() => state--;
+    void setPage(int page) => state = page;
+    void reset() => state = 1;
+}
+
+class TopRatePageNotifier extends Notifier<int> {
+  @override
+  int build() => 1;
+
+  void nextPage() => state++;
+  void previousPage() => state--;
+  void setPage(int page) => state = page;
+  void reset() => state = 1;
+}
+
+class UpcomingPageNotifier extends Notifier<int> {
+  @override
+  int build() => 1;
+
+  void nextPage() => state++;
+  void previousPage() => state--;
+  void setPage(int page) => state = page;
+  void reset() => state = 1;
+}
+
+class SearchQueryNotifier extends Notifier<String> {
+  @override
+  String build() => '';
+
+  void setQuery(String query) => state = query;
+  void clear() => state = '';
+}
+
 // State Notifiers for pagination
-final popularMoviesPageProvider = StateProvider<int>((ref) => 1);
-final topRatedPageProvider = StateProvider<int>((ref) => 1);
-final upcomingPageProvider = StateProvider<int>((ref) => 1);
-final searchQueryProvider = StateProvider<String>((ref) => '');
+final popularMoviesPageProvider = NotifierProvider<PopularMoviesPageNotifier, int>(PopularMoviesPageNotifier.new);
+final topRatedPageProvider = NotifierProvider<TopRatePageNotifier, int>(TopRatePageNotifier.new);
+final upcomingPageProvider = NotifierProvider<UpcomingPageNotifier, int>(UpcomingPageNotifier.new);
+final searchQueryProvider = NotifierProvider<SearchQueryNotifier, String>(SearchQueryNotifier.new);
+
 
 // Movies Providers
 final popularMoviesProvider = FutureProvider.family<MoviesResponse, int>((
