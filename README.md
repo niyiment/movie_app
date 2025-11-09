@@ -38,4 +38,33 @@ A beautiful, responsive Flutter application for discovering and exploring movies
 
     1. Clone the repository
     ```
-    cd 
+    git clone https://github.com/niyiment/movie_app.git
+    cd movies_app
+    ```
+
+    2. Install dependencies
+    ```
+    flutter pub get
+    ```
+    3. Get your TMDb API
+     - Visit [TMDb API](https://www.themoviedb.org/settings/api)
+     - Create an account and generate an API key
+    4. Configure API key: Create a .env file and configure your API key.
+    5. Generate code:
+    ```
+    dart run build_Runner build --delete-conflicting-outputs
+    ```
+    6. Run the app
+    ``` 
+    flutter run
+    ```
+
+## Future enhancement
+
+    - Offline caching with Drift
+    - Whatchlist functionalit with local storage
+    - User reviews and ratings
+    - Advanced filtering and sorting
+    - Dark/Light mode
+    - Share moview details
+    
