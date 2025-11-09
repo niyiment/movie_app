@@ -20,11 +20,7 @@ A beautiful, responsive Flutter application for discovering and exploring movies
 
 ## Screenshots
 
-![Home Screen](assets/screenshots/screenshot1.png)
-
-![Moview Details Screen](assets/screenshots/screenshot2.png)
-
-![Search Result Screen](assets/screenshots/screenshot3.png)
+![Home Screen](assets/screenshots/screenshot1.png)  ![Moview Details Screen](assets/screenshots/screenshot2.png)   ![Search Result Screen](assets/screenshots/screenshot3.png)
 
 ## Getting Started
 
